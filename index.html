@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxtravel</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/fe6312b498.js" crossorigin="anonymous"></script>
+    
+    <!--CSS style-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>  
+
+</head>
+<body>
+    <section id = "title">
+        <nav class="navbar navbar-expand-lg navbar-dark" id = "navbar-mod">
+            <a class="navbar-brand" href="#"><i class="fab fa-canadian-maple-leaf"></i>Luxtravel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    
+                    <a class="nav-link" href="#"><i class="fas fa-plane-departure"></i>Flights</a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-bed"></i>Stays</a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-car"></i>Car Rentals</a>
+                </li>
+                <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </a>
+                <div class="dropdown-menu"  id ='fill-black' aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Explore</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">help</a>
+                </div>
+                </li>
+                <li class="nav-item active dropdown" >
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </a>
+                    <div class="dropdown-menu" id="fill-black" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Sign in</a>
+                        <a class="dropdown-item" href="#">Login</a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <div class = "travel-form row">
+            <div class =" col-lg-6">
+                <h1 class="title-slide">Book exotic and lavish vacations to match your lifestyle.</h1>
+                <p class="title-slide-second">Now you can conviniently book exotic lavish vacations at convinience of
+                    your home, No need to spend hours looking for right tavel agent when Luxtravel
+                    is here.
+                </p>
+            </div>
+            <div class = "col-lg-6">
+                <div class = "booking-form">
+                    <div class="row radio-choice">
+                        <div class = "col-lg-6 col-md-6 col-sm-6">
+                            <input type="radio" id="roundtrip" name="choice" value="roundtrip">
+                            <label for="roundtrip">Roundtrip</label>
+                        </div>
+                        <div class = "col-lg-6 col-md-6 col-sm-6">
+                            <input type="radio" id="one-way" name="choice" value="one-way">
+                            <label for="one-way">One Way</label>
+                        </div>
+                    </div>
+                    <div class="major-input">
+                        <label for="fname">Flying From</label><br>
+                        <input type="text" id="fname" name="fname" value="City or Airport">
+                    </div>
+                    <div class="major-input">
+                        <label for="fname">Flying To</label><br>
+                        <input type="text" id="fname" name="fname" value="City or Airport">
+                    </div>
+                    <div class="minor-input row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <label for="fname">Departing</label><br>
+                            <input type="date">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <label for="fname">Returning</label><br>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="minor-input-second row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <label for="fname">Adults</label><br>
+                            <input type="number" value=1>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <label for="fname">Children</label><br>
+                            <input type="number" value=0>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class ="btn">Show Flights</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id = "trending-location">
+        <div class = "continer">
+            <div>
+                <h1>Trending Locations</h1>
+                <p>The most searched for Locations on Luxtravel</p>
+            </div>    
+                <div class="card-deck row mr-auto">
+                <div class="card col-lg-4 col-md-6">
+                    <img class="card-img-top" src="images/milan.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Milan</h5>
+                    <p class="card-text">Now you can conviniently book exotic lavish vacations at convinience of
+                    your home, No need to spend hours looking for right tavel agent when Luxtravel
+                    is here.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6">
+                    <img class="card-img-top" src="images/los.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Los Angeles</h5>
+                    <p class="card-text">Now you can conviniently book exotic lavish vacations at convinience of
+                    your home, No need to spend hours looking for right tavel agent when Luxtravel
+                    is here.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6">
+                    <img class="card-img-top" src="images/paris.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Paris</h5>
+                    <p class="card-text">Now you can conviniently book exotic lavish vacations at convinience of
+                    your home, No need to spend hours looking for right tavel agent when Luxtravel
+                    is here.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck row mr-auto">
+                <div class="card col-lg-4 col-md-6">
+                    <img class="card-img-top" src="images/dubai.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Dubai</h5>
+                    <p class="card-text">Now you can conviniently book exotic lavish vacations at convinience of
+                    your home, No need to spend hours looking for right tavel agent when Luxtravel
+                    is here.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6">
+                    <img class="card-img-top" src="images/download (1).jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Hawaii</h5>
+                    <p class="card-text">Now you can conviniently book exotic lavish vacations at convinience of
+                    your home, No need to spend hours looking for right tavel agent when Luxtravel
+                    is here.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6">
+                    <img class="card-img-top" src="images/tokyo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Tokyo</h5>
+                    <p class="card-text">Now you can conviniently book exotic lavish vacations at convinience of
+                    your home, No need to spend hours looking for right tavel agent when Luxtravel
+                    is here.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section id = "reviews">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 id = "testy">It's the best million bucks I ever spent on my vacation to Bahamas</h2>
+                <img class="testimonial-image" src="images/bill.jpg" alt="">
+                <em>Bill Gates, software guy</em>
+              </div>
+              <div class="carousel-item">
+                <h2 id="testy">They could only find me a 5-Star hotel,But thankfully I know how to live on basics</h2>
+                <img class="testimonial-image" src="images/jeff.jpg" alt="">
+                <em>Jeff Bezos, internet guy</em>
+              </div>
+              <div class="carousel-item">
+                <h2 id="testy">I got some cheap deals here, I recommend it to all poor millionaires out there.</h2>
+                <img class="testimonial-image" src="images/download.jpg" alt="">
+                <em>Mark Zuckerberg, college dropout</em>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section id = "press">
+        <h1>Our partners</h1>
+        <img class= "press-image" src="images/google.png" alt="tc-logo">
+        <img class= "press-image" src="images/goibibo.jpg" alt="tnw-logo">
+        <img class= "press-image" src="images/yatra.png" alt="biz-insider-logo">
+        <img class= "press-image" src="images/tripadvisor.png" alt="mashable-logo">
+    </section>
+    <footer id ="footer">
+        <p id = "footer-icon">
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fas fa-envelope"></i>
+          </p>
+          <p>© Copyright 2021 Luxtravel</p>
+    </footer>
+</body>
+</html>
